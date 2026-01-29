@@ -31,7 +31,6 @@ data/
 └── train_all_data/
     ├── scan_0001/
     │   ├── T1.nii.gz
-    │   ├── seg.nii.gz
     │   └── seg.nii.gz
     ├── scan_0004/
     │   └── ...
@@ -72,7 +71,38 @@ python setup.py install
 pip install monai
 ```
 
+## ⚡ Preprocessing, training, and testing
 
+### 🆓 Preprocessing
+In my setting, the data directory of AIMS-TBI 2025 is : **"./data/train_all_data/"**.
+
+First, we need to run the pre-processing code to do resample, normalization, and crop processes.
+
+```bash
+python 1_preprocessing_AIMSTBI_2025.py
+```
+
+### 🆓 Training 
+
+When the pre-processing process is done, we can train our model.
+
+We mainly use the pre-processde data from last step: **data_dir = ./data/train_fullres_process**
+
+
+```bash 
+python 3_train.py
+```
+
+### 🆓 Testing
+
+When we have trained our models, we can inference all the data in testing set.
+
+We mainly use the pre-processde data from "Preprocessing" step: **data_dir = ./data/train_fullres_process**, the original data (**"./data/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/" || "./data/BraTS2024-BraTS-GLI-TrainingData/" || "./data/Task01_BrainTumour/"**), 
+and the parameter you get from last step: **model_path = ./data/3D_parameter/SegRWKV_BraTS_2023.pth || ./data/3D_parameter/SegRWKV_BraTS_2024.pth || ./data/3D_parameter/SegRWKV_Task01_BrainTumour.pth**.
+
+```bash 
+python 4_predict_assemble_save.py
+```
 
 
 
