@@ -1,6 +1,6 @@
 <div align="center">
   
-# BLSegMamba An Optimized SegMamba Framework for msTBI Lesion Segmentation in MRI
+# 🧩 BLSegMamba An Optimized SegMamba Framework for msTBI Lesion Segmentation in MRI
 
 </div>
   
@@ -19,4 +19,30 @@
 > Segmentation results under different patch sizes, batch sizes, and loss settings.
 
 ![image](./Pictures/results.png)
+
+## ⚡ Environment install
+
+Creating a virtual environment in terminal: `conda create -n BLSegMamba python=3.10`
+
+```bash
+git clone https://github.com/ge-xing/BLSegMamba.git
+
+cd BLSegMamba
+```
+
+### Install causal-conv1d
+
+```bash
+cd causal-conv1d
+
+python setup.py install
+```
+
+### Install mamba
+
+```bash
+cd mamba
+
+python setup.py install
+```
 
