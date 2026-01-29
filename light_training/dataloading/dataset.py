@@ -115,7 +115,7 @@ def get_train_test_loader_from_test_list(data_dir, test_list):
         if p2 in test_list:
             test_datalist.append(p)
             # TODO
-            train_datalist.append(p)
+            # train_datalist.append(p)
         else :
             train_datalist.append(p)
 
