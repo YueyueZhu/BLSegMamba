@@ -46,3 +46,23 @@ cd mamba
 python setup.py install
 ```
 
+### Install monai 
+
+```bash
+pip install monai
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
