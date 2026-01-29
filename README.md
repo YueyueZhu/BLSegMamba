@@ -99,6 +99,9 @@ python 2_train.py
 
 When we have trained our models, we can inference all the data in testing set.
 
+We provide the best checkpoint (optimal weights) at:  
+**https://drive.google.com/file/d/1AkNn2iyJu-1GpajXaJ7IPFLgk3jDs52w/view?usp=drive_link**
+
 We mainly use the pre-processde data from "Preprocessing" step: **data_dir = ./data/train_all_fullres_process/**.
 
 And the parameter you get from last step: **model_path = ./data/parameter/best_model_AIMS_26.pth**.
