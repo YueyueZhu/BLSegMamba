@@ -20,6 +20,26 @@
 
 ![image](./Pictures/results.png)
 
+## ⚡ Data
+
+### AIMS-TBI 2025
+
+The data directory should be organized in the following manner.:
+
+```text
+data/
+└── train_all_data/
+    ├── scan_0001/
+    │   ├── T1.nii.gz
+    │   ├── seg.nii.gz
+    │   └── seg.nii.gz
+    ├── scan_0004/
+    │   └── ...
+    ├── scan_0007/
+    │   └── ...
+    └── ...
+```
+
 ## ⚡ Environment install
 
 Creating a virtual environment in terminal: `conda create -n BLSegMamba python=3.10`
