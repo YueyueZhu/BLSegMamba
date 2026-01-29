@@ -25,7 +25,7 @@
 Creating a virtual environment in terminal: `conda create -n BLSegMamba python=3.10`
 
 ```bash
-git clone https://github.com/ge-xing/BLSegMamba.git
+git clone https://github.com/YueyueZhu/BLSegMamba.git
 
 cd BLSegMamba
 ```
